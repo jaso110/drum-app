@@ -8,7 +8,6 @@ h1 {
   color: #DBEDF3;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
-
 }
 
 footer {
@@ -17,31 +16,31 @@ footer {
 }
 
 .w {
-
+  background-color: #404B69;
 }
 
 .a {
-
+  background-color: #404B69;
 }
 
 .s {
-
+  background-color: #404B69;
 }
 
 .d {
-
+  background-color: #404B69;
 }
 
 .j {
-
+  background-color: #404B69;
 }
 
 .k {
-
+  background-color: #404B69;
 }
 
 .l {
-
+  background-color: #404B69;
 }
 
 .set {
@@ -64,7 +63,7 @@ footer {
 
 .drum {
   outline: none;
-  border: 10px solid #404B69;
+  border: 10px solid #DA0463;
   font-size: 5rem;
   font-family: 'Arvo', cursive;
   line-height: 2;
@@ -77,5 +76,5 @@ footer {
   height: 150px;
   text-align: center;
   margin: 10px;
-  background-color: white;
+  background-color: #404B69;
 }
