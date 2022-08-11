@@ -1,35 +1,52 @@
-document.querySelector(".w").addEventListener("click", clickedW);
-document.querySelector(".a").addEventListener("click", clickedA);
-document.querySelector(".s").addEventListener("click", clickedS);
-document.querySelector(".d").addEventListener("click", clickedD);
-document.querySelector(".j").addEventListener("click", clickedJ);
-document.querySelector(".k").addEventListener("click", clickedK);
-document.querySelector(".l").addEventListener("click", clickedL);
+var numberOfButtons = document.querySelectorAll(".drum").length;
 
-function clickedW() {
-  alert("w");
-}
+for (var i = 0; i < numberOfButtons; i++) {
 
-function clickedA() {
-  alert("a");
-}
+  document.querySelectorAll(".drum")[i].addEventListener("click", function() {
 
-function clickedS() {
-  alert("s");
-}
+    var buttonInnerHTML = this.innerHTML;
 
-function clickedD() {
-  alert("d");
-}
+    switch (buttonInnerHTML) {
 
-function clickedJ() {
-  alert("j");
-}
+      case "w":
+        var tom1 = new Audio("sounds/tom-1.mp3");
+        tom1.play();
+        break;
 
-function clickedK() {
-  alert("k");
-}
+      case "a":
+        var tom2 = new Audio("sounds/tom-2.mp3");
+        tom2.play();
+        break;
 
-function clickedL() {
-  alert("l");
+      case "s":
+        var tom3 = new Audio("sounds/tom-3.mp3");
+        tom3.play();
+        break;
+
+      case "d":
+        var tom4 = new Audio("sounds/tom-4.mp3");
+        tom4.play();
+        break;
+
+      case "j":
+        var crash = new Audio("sounds/crash.mp3");
+        crash.play();
+        break;
+
+      case "k":
+        var kick = new Audio("sounds/kick-bass.mp3");
+        kick.play();
+        break;
+
+      case "l":
+        var snare = new Audio("sounds/snare.mp3");
+        snare.play();
+        break;
+
+      default:
+        console.log(buttonInnerHTML);
+    }
+
+  });
+
 }
